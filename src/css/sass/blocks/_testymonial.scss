@@ -1,0 +1,30 @@
+.testymonial-bl{
+    .cs-testymonial{
+        .kto-co{
+            padding: 50px;
+            text-align: center;
+            .co{
+                margin-bottom: 20px;
+            }
+            .kto{
+                color:$black;
+                font-weight: 700;
+                font-size: 21px;
+            }
+        }
+        .swiper-button-prev, .swiper-button-next{
+            border-radius: 100px;
+            border: 1px solid $black;
+            width: 59px;
+            height: 59px;
+            @media #{$sm}{
+                width: 32px;
+                height: 32px;
+            }
+            &:after{
+                font-size: 16px;
+                color:$black;
+            }
+        }
+    }
+}

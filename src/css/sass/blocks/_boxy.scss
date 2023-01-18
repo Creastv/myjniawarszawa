@@ -1,0 +1,97 @@
+.boxy{
+    padding: 20px 0;
+    @media #{$sm}{
+        padding: 50px 0;
+    }
+    .wraper-boxy{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        li{
+            width: 33.333%;
+            padding: 2%;
+            @media #{$sm}{
+                width: 50%;
+            }
+            // &:nth-child(2),  &:nth-child(5){
+            //     a{
+            //     // transform: translateY(-30px);
+            //     @media #{$sm}{
+            //         transform: translateY(0px);
+            //     }
+            //         &:hover{
+            //             transform: translateY(-45px);
+            //             @media #{$sm}{
+            //                 transform: translateY(-15px);
+            //             }
+            //         }
+            //     }
+            // }
+            a{
+                box-shadow: 0 0 40px 5px rgba(51, 51, 51, .3);
+                border-radius: 10px;
+                overflow: hidden;
+                display: block;
+                position: relative;
+                
+                &:hover{
+                    box-shadow: 0 0 40px 5px rgba(51, 51, 51, .5);
+                    transform: translateY(-15px);
+                    .con{
+                        padding: 10px;
+                        @media #{$sm}{
+                            padding: 5px;
+                        }
+                        h3{
+                            background: $main2;
+                            border-radius: 100px;
+                            i{
+                                color:#fff;
+                            }
+                        }
+                    }
+                }
+                img{
+                    width: 100%;
+                    height: auto;
+                    border-radius: 10px;
+                }
+                .con{
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                    width: 100%;
+                    @include trans;
+                    h3{
+                        @include trans;
+                        position: relative;
+                        font-family: 'Open Sans', sans-serif;
+                        border-radius: 10px;
+                        color:#fff;
+                        background: rgba(0, 0, 0, 0.5);
+                        width: 100%;
+                        font-size: 16px;
+                        margin-bottom: 0;
+                        padding: 10px;
+                        padding-right: 30px;
+                        @media #{$sm}{
+                            font-size: 14px;
+                        }
+                        i{
+                            position: absolute;
+                            right: 10px;
+                            color:$main2;
+                            top: 50%;
+                            transform: translate(0px, -50%);
+                        }
+
+                    }
+                }
+                
+            }
+        }
+    }
+}

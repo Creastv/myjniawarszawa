@@ -1,0 +1,116 @@
+.page-template-home{
+    header{
+        position: absolute;
+        background: none!important;
+        .wraper{
+            background:none!important;
+        }
+    }
+}
+.cs-carousel{
+    height: 80vh;
+    @media #{$xs}{
+        min-height: 500px;
+    }
+    .after{
+        display: block;
+        background: url(../img/arrow-label.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        width: 100%;
+        height: 54px;
+        bottom: 0;
+        left:50%;
+        z-index: 2;
+        transform: translate(-50%, 0) rotate(180deg);
+        transition: all 0.3s 0s ease;
+        cursor: pointer;
+        @media #{$xs}{
+            height: 39px;
+            bottom: -3px;
+        }
+        &:hover{
+            opacity: 0.9;
+        }
+    }
+    .swiper-button-prev, .swiper-button-next{
+        border-radius: 100px;
+        border: 1px solid #fff;
+        width: 59px;
+        height: 59px;
+        @media #{$sm}{
+            width: 32px;
+            height: 32px;
+        }
+        @media #{$xs}{
+            display: none;
+        }
+        &:after{
+            font-size: 16px;
+            color:#fff;
+        }
+        &:hover{
+            border: 1px solid $main2;
+            &:after{
+                font-size: 16px;
+                color:$main2;
+            }
+        }
+    }
+    .swiper-slide{
+        background-size: cover;
+        background-position:center;
+        .wrap{
+            background:rgba($black, .7);
+            height: 100%;
+            position: relative;
+            .content{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                width: 80%;
+                @media #{$xs}{
+                    width: 93%;
+                    padding-top: 50px;
+                }
+                .title{
+                    color:#fff;
+                    display: block;
+                    font-size: 51px;
+                    @media #{$xs}{
+                        font-size: 28px;
+                    }
+                    small {
+                        position: relative;
+                        color:#fff;
+                        padding-left: 120px;
+                        font-size: 14px;
+                        margin-bottom: 20px;
+                        display: inline-block;
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            height: 1px;
+                            width: 100px;
+                            background: #fff;
+                            left: 0;
+                            top: 50%;
+                            -webkit-transform: translate(0, -50%);
+                            transform: translate(0, -50%);
+                        }
+                    }
+                }
+                p{
+                    color:#fff;
+                }
+                .btn{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

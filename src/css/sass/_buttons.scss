@@ -1,0 +1,127 @@
+.but{
+    // display: inline-block;
+    .btn-ico-right{
+        display: inline-block;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 0px 5px 15px;
+        text-transform: uppercase;
+    
+        i{
+            margin: 0px 10px 0px 10px;
+            background:none;
+            border:1px solid #fff;
+            color:#fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 18px;
+            font-size: 10px;
+            vertical-align: middle;
+        }
+    }
+}
+
+.btn{
+    outline: 0;
+    transition: all .15s ease-in-out;
+    &:focus, &:active{
+        box-shadow:none!important;
+        opacity: .8;
+    }
+}
+
+.btn-main{
+    color: #fff;
+    background-color: $main2;
+    font-size: 16px;
+    font-weight: 600;
+    @include trans;
+    @include shadow;
+    padding: 10px 30px;
+    border-radius:100px;
+    &:hover{
+        background-color: darken($main2, 10);
+        color:#fff;
+    }
+    &:focus{
+        background-color: darken($main2, 5);
+        color:#fff;
+    }
+}
+.btn-ico-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px 5px 15px;
+    text-transform: uppercase;
+
+    i{
+        margin: 0px 5px 0px 10px;
+        background: #fff;
+        color:$main2;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 32px;
+        font-size: 16px;
+        vertical-align: middle;
+    }
+}
+
+.btn-ico-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px 5px 0px;
+    text-transform: uppercase;
+
+    i{
+        margin: 0px 15px 0px 5px;
+        background: #fff;
+        color:$main2;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 32px;
+        font-size: 16px;
+        vertical-align: middle;
+    }
+}
+
+.btn-revers{
+   color: #fff;
+    // background-color: $main2;
+    border:1px solid $main2;
+    color:$main2;
+    font-size: 16px;
+    font-weight: 600;
+    @include trans;
+    @include shadow;
+    padding: 10px 30px;
+    border-radius:100px;
+    &:hover{
+        background-color: darken($main2, 10);
+        color:#fff;
+    }
+    &:focus{
+        background-color: darken($main2, 5);
+        color:#fff;
+    }
+}
+
+
+.btn-small{
+    padding: 0 10px;
+    height: inherit;
+    line-height: 2;
+}
+
+.btn{
+    i{
+        margin: 0px 10px;
+    }
+}
