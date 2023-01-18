@@ -1,325 +1,338 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-weight: 300 ;
-    padding:0;
-    margin: 0;
-    overflow-x: hidden;
-    color:$p;
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  color: $p;
 }
 #oferta:target:before {
-    content:"";
-    display:flex;
-    height:100px; /* fixed header height*/
-    margin:0px 0 0; /* negative fixed header height */
-    }
+  content: "";
+  display: flex;
+  height: 100px; /* fixed header height*/
+  margin: 0px 0 0; /* negative fixed header height */
+}
 .wp-block {
-    max-width: 90%;
+  max-width: 90%;
 }
-::-moz-selection { background: $main; color:#fff }
-::selection { background: $main; color:#fff }
-
-.container{
-    width: 1200px;
-    @media #{$sm}{
-        max-width: 100%;
-    }
+::-moz-selection {
+  background: $main;
+  color: #fff;
 }
-.container-fluid{
-    padding-left: 150px;
-    padding-right: 150px;
-    @media #{$llg}{
-        padding-left:50px;
-        padding-right: 50px;
-    }
-    @media #{$sm}{
-        padding-left:15px;
-        padding-right: 15px;
-    }
-    @media #{$xs}{
-        max-width: 100%;
-    }
+::selection {
+  background: $main;
+  color: #fff;
 }
 
-.red{
-    color:$main2;
+.container {
+  width: 1200px;
+  @media #{$sm} {
+    max-width: 100%;
+  }
 }
-.top-30{
-    margin-top: -30px;
-}
-.kk-star-ratings.kksr-valign-bottom{
-    margin-bottom: 50px;
-    display: block!important;
-    text-align: center;
-    // kksr-icon
-    .kksr-stars{
-        display: inline-block;
-        margin: 30px 0px;
-    }
+.container-fluid {
+  padding-left: 150px;
+  padding-right: 150px;
+  @media #{$llg} {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @media #{$sm} {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media #{$xs} {
+    max-width: 100%;
+  }
 }
 
+.red {
+  color: $main2;
+}
+.top-30 {
+  margin-top: -30px;
+}
+.kk-star-ratings.kksr-valign-bottom {
+  margin-bottom: 50px;
+  display: block !important;
+  text-align: center;
+  // kksr-icon
+  .kksr-stars {
+    display: inline-block;
+    margin: 30px 0px;
+  }
+}
 
 .wp-block-image img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
-blockquote{
-    border-left: 1px solid $main;
-    margin: 54px 65px 44px 70px !important;
-    padding: 0 0 0 20px;
-    font-size: 18px;
-    font-style: italic;
-    line-height: 1.78;
+blockquote {
+  border-left: 1px solid $main;
+  margin: 54px 65px 44px 70px !important;
+  padding: 0 0 0 20px;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.78;
+  position: relative;
+
+  p {
+    color: $black;
+  }
+}
+.swiper-pagination-bullet-active {
+  background: $main !important;
+}
+#main-page {
+  margin-top: 30px;
+}
+
+.tabela-cennik {
+  .tab-it {
     position: relative;
-    
-    p{
-        color: $black;
+    box-shadow: -16px 60px 50px -5px rgba(59, 58, 58, 0.01);
+    border-radius: 10px;
+    margin-bottom: 0;
+    // padding: 20px 15px;
+    background-color: #fff;
+    // background-image: url(../img/bg-table.png);
+    background-position: bottom;
+    -webkit-transition: all 0.3s 0s ease;
+    transition: all 0.3s 0s ease;
+    // overflow: hidden;
+    border: 1px solid #ededed;
+    margin: 30px;
+  }
+  table {
+    margin-bottom: 0;
+  }
+
+  thead {
+    th {
+      //   font-weight: 300 !important;
+      color: #6d6d6e;
+      font-size: 14px !important;
     }
+  }
+  td,
+  th {
+    vertical-align: middle !important;
+  }
+  td small,
+  th small {
+    font-size: 11px;
+    line-height: 1;
+  }
+  .table-hover tbody tr {
+    box-shadow: 0px 0px 0px 0px #b9b9b9;
+    @include trans;
+  }
+  .table-hover tbody tr:hover {
+    color: #212529;
+    background-color: #ffff !important;
+    box-shadow: 0px 0px 30px 0px #b9b9b9;
+  }
+
+  table tbody tr td:first-child {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+  table tbody tr td:nth-child(2) {
+    font-size: 14px;
+  }
+  table thead tr th:nth-child(3),
+  table thead tr th:nth-child(4),
+  table thead tr th:nth-child(5) {
+    text-align: center;
+  }
+
+  table thead tr th:nth-child(2) {
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #ffffff2b;
+    vertical-align: bottom !important;
+  }
+  table thead tr th:nth-child(1) {
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #ffffff2b;
+    vertical-align: bottom !important;
+  }
+  table thead tr th:nth-child(3) {
+    background-color: #c31b1b;
+    border-top-left-radius: 20px;
+  }
+  .table-hover tbody tr:hover td:nth-child(3) {
+    background-color: #c31b1b;
+  }
+  table tbody tr td:nth-child(3) {
+    background-color: rgba(48, 66, 153, 0.8);
+  }
+
+  table thead tr th:nth-child(3),
+  table tbody tr td:nth-child(3) {
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+    font-size: 18px;
+    text-align: center;
+    // background: rgba(40, 40, 41, .68);
+    border: none;
+    border-bottom: 1px solid #ffffff2b;
+    min-width: 100px;
+    max-width: 100px;
+    @media #{$xs} {
+      min-width: 100%;
+      max-width: 100%;
+    }
+    small {
+      display: block;
+      // font-weight: inherit;
+      line-height: 1.4;
+      font-size: 10px;
+    }
+    big {
+      font-size: 28px;
+    }
+  }
+  table thead tr th:nth-child(4),
+  .table-hover tbody tr:hover td:nth-child(4) {
+    background-color: #ad2120;
+  }
+  table tbody tr td:nth-child(4) {
+    background-color: rgba(23, 33, 86, 0.8);
+  }
+  table thead tr th:nth-child(4),
+  table tbody tr td:nth-child(4) {
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+    font-size: 18px;
+    text-align: center;
+
+    border: none;
+    border-bottom: 1px solid #ffffff2b;
+    min-width: 100px;
+    max-width: 100px;
+    @media #{$xs} {
+      min-width: 100%;
+      max-width: 100%;
+    }
+    small {
+      display: block;
+      // font-weight: inherit;
+      line-height: 1.4;
+      font-size: 10px;
+    }
+    big {
+      font-size: 28px;
+    }
+  }
+  table thead tr th:nth-child(5),
+  .table-hover tbody tr:hover td:nth-child(5) {
+    background-color: #951b1a;
+  }
+  table tbody tr td:nth-child(5) {
+    background-color: rgba(7, 15, 58, 0.8);
+  }
+  table thead tr th:nth-child(5),
+  table tbody tr td:nth-child(5) {
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #ffffff2b;
+    min-width: 100px;
+    max-width: 100px;
+    @media #{$xs} {
+      min-width: 100%;
+      max-width: 100%;
+    }
+    small {
+      display: block;
+      // font-weight: inherit;
+      line-height: 1.4;
+      font-size: 10px;
+    }
+    big {
+      font-size: 28px;
+    }
+  }
+  .inf-cenik {
+    padding: 10px;
+    display: none;
+    p {
+      margin-bottom: 0px;
+      font-size: 12px;
+    }
+  }
+  @media #{$xs} {
+    .inf-cenik {
+      display: block;
+    }
+    thead {
+      display: none;
+    }
+    td {
+      padding: 5px;
+    }
+    tr {
+      display: grid;
+      display: grid;
+      // grid-template-columns: 1fr 1fr 1fr;
+      // grid-template-rows: 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-template-areas:
+        "name name name"
+        "Desc Desc Desc"
+        "Small Mredium Large";
+    }
+    table tbody tr td:nth-child(1) {
+      grid-area: name;
+    }
+    table tbody tr td:nth-child(2) {
+      grid-area: Desc;
+    }
+    table tbody tr td:nth-child(3) {
+      grid-area: Small;
+    }
+    table tbody tr td:nth-child(3)::before {
+      content: " Mały *";
+      display: block;
+      font-size: 10px;
+      font-weight: 100;
+    }
+    table tbody tr td:nth-child(4) {
+      grid-area: Mredium;
+    }
+    table tbody tr td:nth-child(4)::before {
+      content: " Średni *";
+      display: block;
+      font-size: 10px;
+      font-weight: 100;
+    }
+    table tbody tr td:nth-child(5) {
+      grid-area: Large;
+    }
+    table tbody tr td:nth-child(5)::before {
+      content: " Duży *";
+      display: block;
+      font-size: 10px;
+      font-weight: 100;
+    }
+  }
 }
-.swiper-pagination-bullet-active{
-    background:$main!important;
-}
-#main-page{
-    margin-top: 30px;
-}
-
-.tabela-cennik{
-    .tab-it{
-        position: relative;
-        box-shadow: -16px 60px 50px -5px rgba(59, 58, 58, .10);
-        border-radius: 10px;
-        margin-bottom: 0;
-        // padding: 20px 15px;
-        background-color: #fff;
-         background-image: url(../img/bg-table.png);
-         background-position: bottom;
-        -webkit-transition: all 0.3s 0s ease;
-        transition: all 0.3s 0s ease;
-        // overflow: hidden;
-    }
-    table{
-        margin-bottom: 0;
-    }
-
-    thead{
-        th{
-        font-weight: 300!important;
-        color: #6d6d6e;
-        font-size: 14px!important;
-        }
-    }
-    td, th{
-        vertical-align: middle!important;
-    }
-    td small, th small {
-        font-size: 11px;
-        line-height: 1;
-    }
-    .table-hover tbody tr{
-        box-shadow: 0px 0px 0px 0px #b9b9b9;
-        @include trans;
-    }
-    .table-hover tbody tr:hover {
-        color: #212529;
-        background-color: #ffff!important;
-        box-shadow: 0px 0px 30px 0px #b9b9b9;
-    } 
-
-    table tbody tr td:first-child{
-        font-size: 18px;
-        font-weight: 700;
-    }
-
-
-
-    .table-striped tbody tr:nth-of-type(odd) {
-        background-color: rgba(0, 0, 0, .03);
-    }
-    table tbody tr td:nth-child(2){
-        font-size: 14px;
-    }
-    table thead tr th:nth-child(3), table thead tr th:nth-child(4), table thead tr th:nth-child(5){
-        text-align: center;
-    }
-
-
-    table thead tr th:nth-child(2){
-
-        font-weight: 700;
-        margin-bottom: 0;
-        font-size: 18px;
-        border: none;
-        border-bottom: 1px solid #ffffff2b;
-        vertical-align: bottom!important;
-    }
-    table thead tr th:nth-child(1){
-
-        font-weight: 700;
-        margin-bottom: 0;
-        font-size: 18px;
-        border: none;
-        border-bottom: 1px solid #ffffff2b;
-        vertical-align: bottom!important;
-    }
-    table thead tr th:nth-child(3){
-        background-color: #c31b1b;
-        border-top-left-radius: 20px;
-    }
-    .table-hover tbody tr:hover td:nth-child(3){
-        background-color: #c31b1b;
-    }
-    table tbody tr td:nth-child(3){
-        background-color: rgba(48, 66, 153, 0.8);
-    }
-    
- 
-    table thead tr th:nth-child(3), table tbody tr td:nth-child(3){
-        font-weight: 700;
-        color: #ffffff;
-        margin-bottom: 0;
-        font-size: 18px;
-        text-align: center;
-        // background: rgba(40, 40, 41, .68);
-        border: none;
-        border-bottom: 1px solid #ffffff2b;
-        min-width: 100px;
-        max-width: 100px;
-        @media #{$xs}{
-            min-width: 100%;
-            max-width: 100%;
-        }
-        small{
-            display: block;
-            // font-weight: inherit;
-            line-height: 1.4;
-            font-size: 10px;
-        }
-        big{
-            font-size: 28px;
-        }
-    } 
-    table thead tr th:nth-child(4), .table-hover tbody tr:hover td:nth-child(4){
-        background-color: #ad2120;
-    }
-    table tbody tr td:nth-child(4){
-        background-color: rgba(23, 33, 86, 0.8);
-    }
-    table thead tr th:nth-child(4), table tbody tr td:nth-child(4){
-
-        font-weight: 700;
-        color: #ffffff;
-        margin-bottom: 0;
-        font-size: 18px;
-        text-align: center;
-
-        border: none;
-        border-bottom: 1px solid #ffffff2b;
-        min-width: 100px;
-        max-width: 100px;
-        @media #{$xs}{
-            min-width: 100%;
-            max-width: 100%;
-        }
-        small{
-            display: block;
-            // font-weight: inherit;
-            line-height: 1.4;
-            font-size: 10px;
-        }
-        big{
-            font-size: 28px;
-        }
-        
-    } 
-    table thead tr th:nth-child(5), .table-hover tbody tr:hover td:nth-child(5){
-        background-color: #951b1a;
-    }
-    table tbody tr td:nth-child(5){
-        background-color: rgba(7, 15, 58, 0.8);
-    }
-    table thead tr th:nth-child(5), table tbody tr td:nth-child(5){
-
-        font-weight: 700;
-        color: #ffffff;
-        margin-bottom: 0;
-        font-size: 18px;
-        text-align: center;
-        border: none;
-        border-bottom: 1px solid #ffffff2b;
-        min-width: 100px;
-        max-width: 100px;
-        @media #{$xs}{
-            min-width: 100%;
-            max-width: 100%;
-        }
-        small{
-            display: block;
-            // font-weight: inherit;
-            line-height: 1.4;
-            font-size: 10px;
-        }
-        big{
-            font-size: 28px;
-        }
-
-    }
-    .inf-cenik{
-        padding: 10px;
-        display: none;
-        p{
-            margin-bottom: 0px;
-            font-size: 12px;
-        }
-    }
-    @media #{$xs}{
-        .inf-cenik{
-            display: block;
-        }
-        thead{display: none;}
-        td{
-            padding:5px;
-        }
-        tr{
-            display: grid;
-            display: grid; 
-            // grid-template-columns: 1fr 1fr 1fr; 
-            // grid-template-rows: 1fr 1fr 1fr; 
-            gap: 0px 0px; 
-            grid-template-areas: 
-                "name name name"
-                "Desc Desc Desc"
-                "Small Mredium Large"; 
-            }
-            table tbody tr td:nth-child(1) { grid-area: name; }
-            table tbody tr td:nth-child(2) { grid-area: Desc; }
-            table tbody tr td:nth-child(3) { grid-area: Small; }
-            table tbody tr td:nth-child(3)::before{
-                content:" Mały *";
-                display: block;
-                font-size: 10px;
-                font-weight: 100;
-            }
-            table tbody tr td:nth-child(4) { grid-area: Mredium; }
-            table tbody tr td:nth-child(4)::before{
-                content:" Średni *";
-                display: block;
-                font-size: 10px;
-                font-weight: 100;
-            }
-            table tbody tr td:nth-child(5) { grid-area: Large; }
-            table tbody tr td:nth-child(5)::before{
-                content:" Duży *";
-                display: block;
-                font-size: 10px;
-                font-weight: 100;
-            }
-
-    }
-
-}
-
-
-
