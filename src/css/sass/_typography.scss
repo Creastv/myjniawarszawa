@@ -1,68 +1,94 @@
-h2{
-    font-size: 31px;
+// h2 {
+//   font-size: 31px;
+// }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  margin: 0 0 18px;
+  color: $black;
 }
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    padding: 0;
-    margin: 0;
-    margin: 0 0 18px;
-    color:$black;
+h1 {
+  font-size: 31px;
 }
-ul{
-    color:$p;
-}
-p{
-    margin-bottom: 1.5em;
-    margin-top: 0;
-    color:$p;
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-}
-b, strong {
-    font-weight: 600;
-}
-a{
-    color:darken($main2, 0);
-   
-    transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
-    &:hover{
-        color:$main;
-        text-decoration: none;
-    }
+h2 {
+  font-size: 24px;
 }
 
-.widget-title{
-    font-family: 'Poppins', sans-serif!important;
-    letter-spacing: 2px;
-    position: relative;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 14px;
 }
 
-.page-title{
-    font-family: 'Poppins', sans-serif!important;
-    letter-spacing: 2px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color:#fff;
-    position: relative;
-    @media #{$sm}{
-        font-size: 24px;
-    }
+ul {
+  color: $p;
+}
+p {
+  margin-bottom: 1.5em;
+  margin-top: 0;
+  color: #666666;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+b,
+strong {
+  font-weight: 600;
+}
+a {
+  color: darken($main2, 0);
+
+  transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+  &:hover {
+    color: $main;
+    text-decoration: none;
+  }
 }
 
-.page-content{
-    figure{
-        @media #{$xs}{
-            width: 100%;
-            height: auto;
-        }
-        img{
-            @media #{$xs}{
-                width: 100%;
-                height: auto;
-            }
-        }
+.widget-title {
+  font-family: "Poppins", sans-serif !important;
+  letter-spacing: 2px;
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.page-title {
+  font-family: "Poppins", sans-serif !important;
+  letter-spacing: 1px;
+  font-weight: 700;
+  // text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  @media #{$sm} {
+    font-size: 24px;
+  }
+}
+
+.page-content {
+  figure {
+    @media #{$xs} {
+      width: 100%;
+      height: auto;
     }
+    img {
+      @media #{$xs} {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }

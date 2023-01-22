@@ -28,9 +28,12 @@ body.home #main-page {
 #breadcrumbs {
   padding: 0 0 10px;
   margin-bottom: 0;
-  span,
-  a {
+  span {
     font-size: 12px;
     color: #fff;
+  }
+  a {
+    font-size: 12px;
+    color: $main2;
   }
 }

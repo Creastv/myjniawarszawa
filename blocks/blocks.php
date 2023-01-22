@@ -98,7 +98,7 @@ function register_acf_block_types() {
       'enqueue_assets'    => function(){
         wp_enqueue_style( 'cr_swiper', 'https://unpkg.com/swiper/swiper-bundle.min.css' );
 	    	wp_enqueue_script('cr-swiper_js', 'https://unpkg.com/swiper/swiper-bundle.min.js',  array(), '20130456', true );
-        wp_enqueue_script('cr-goo_api', 'https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyD1cY3t0qS0AlAcYRqMXl_B7prMDjj1rwI',  array(), '20130456', true );
+        wp_enqueue_script('cr-goo_api', 'https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyB8pMQYqHehRWSDeAVKOrv8JD9s1dR6Y2Q',  array(), '20130456', true );
 	    	wp_enqueue_script( 'g-reviews', get_template_directory_uri() . '/blocks/includes/g-reviews.js', array(), '20130457', true );
       }
     ));
@@ -158,7 +158,19 @@ function register_acf_block_types() {
     //         wp_enqueue_script( 'cr-cennik-table-block', get_template_directory_uri() . '/blocks/includes/cennik-datatable.js', array(), '20130459', true );
     //     },
     //   ));
-
+ acf_register_block_type(array(
+        'name'              => 'text-seo',
+        'title'             => __('SEO tekst'),
+        'render_template'   => 'blocks/block-seo.php',
+        'category'          => 'formatting',
+        'icon' => array(
+          'background' => '#efd6ae',
+          'foreground' => '#fff',
+          'src' => 'ellipsis',
+        ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'text-seo' ),
+    ));
 
 }
 
@@ -167,4 +179,3 @@ function register_acf_block_types() {
 if( function_exists('acf_register_block_type') ) {
     add_action('acf/init', 'register_acf_block_types');
 }
-

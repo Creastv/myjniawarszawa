@@ -10104,17 +10104,42 @@ a.text-dark:focus, a.text-dark:hover {
     border-color: #dee2e6;
   }
 }
-h2 {
-  font-size: 31px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   padding: 0;
   margin: 0;
   margin: 0 0 18px;
   color: #121213;
+}
+
+h1 {
+  font-size: 31px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
 }
 
 ul {
@@ -10124,12 +10149,13 @@ ul {
 p {
   margin-bottom: 1.5em;
   margin-top: 0;
-  color: #848484;
+  color: #666666;
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-b, strong {
+b,
+strong {
   font-weight: 600;
 }
 
@@ -10154,9 +10180,8 @@ a:hover {
 
 .page-title {
   font-family: "Poppins", sans-serif !important;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: 700;
-  text-transform: uppercase;
   color: #fff;
   position: relative;
 }
@@ -10477,6 +10502,15 @@ a:hover {
   background-color: #f8f8f8;
 }
 
+.title-bl h1,
+.title-bl h2,
+.title-bl h3,
+.title-bl h4,
+.title-bl h5,
+.title-bl h6 {
+  font-size: 24px;
+}
+
 .title-bl small {
   position: relative;
   color: #1f328b;
@@ -10551,10 +10585,6 @@ a:hover {
           transform: translateY(-15px);
 }
 
-.boxy .wraper-boxy li a:hover .con {
-  padding: 10px;
-}
-
 @media only screen and (max-width: 992px) {
   .boxy .wraper-boxy li a:hover .con {
     padding: 5px;
@@ -10563,7 +10593,6 @@ a:hover {
 
 .boxy .wraper-boxy li a:hover .con h3 {
   background: #c31b1b;
-  border-radius: 100px;
 }
 
 .boxy .wraper-boxy li a:hover .con h3 i {
@@ -10589,7 +10618,7 @@ a:hover {
   -webkit-transition: all 0.3s 0s ease;
   transition: all 0.3s 0s ease;
   position: relative;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   border-radius: 10px;
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
@@ -11235,5 +11264,40 @@ a:hover {
 
 .star:after {
   content: "\2605";
+}
+
+.seo-roz {
+  padding-bottom: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.seo-roz .wraper-seo {
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+}
+
+.seo-roz .wraper-seo:after {
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  position: absolute;
+  content: "";
+  background: white;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
+  height: 150px;
+  bottom: 0;
+}
+
+.seo-roz .seo-open {
+  height: auto;
+}
+
+.seo-roz .seo-open:after {
+  opacity: 0;
 }
 /*# sourceMappingURL=admin.css.map */
