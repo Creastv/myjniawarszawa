@@ -48,7 +48,7 @@ function cr_widgets_init() {
 		'after_title'   => '</h4>',
 	) );
 	register_sidebar( array(
-		'name'          => __( 'Footer - box2', 'cr' ),
+		'name'          => __( 'Footer - box3', 'cr' ),
 		'id'            => 'sidebar-3',
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
@@ -56,7 +56,7 @@ function cr_widgets_init() {
 		'after_title'   => '</h4>',
 	) );
 	register_sidebar( array(
-		'name'          => __( 'Footer - box3', 'cr' ),
+		'name'          => __( 'Footer - box4', 'cr' ),
 		'id'            => 'sidebar-4',
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
@@ -64,8 +64,24 @@ function cr_widgets_init() {
 		'after_title'   => '</h4>',
 	) );
 	register_sidebar( array(
-		'name'          => __( 'Footer - box4', 'cr' ),
+		'name'          => __( 'Footer - box6', 'cr' ),
 		'id'            => 'sidebar-5',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Footer - box2', 'cr' ),
+		'id'            => 'sidebar-6',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Footer - box5', 'cr' ),
+		'id'            => 'sidebar-7',
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4 class="widget-title">',
@@ -138,13 +154,13 @@ add_filter( 'site_transient_update_plugins', 'remove_update_notifications' );
 /**
 * ACF pola - edycja
 */
-function remove_acf_menu(){
-	global $current_user;
-	if ($current_user->user_login!='admin'){
-	  remove_menu_page( 'edit.php?post_type=acf-field-group' );
-	}
-  }
-add_action( 'admin_menu', 'remove_acf_menu', 100 );
+// function remove_acf_menu(){
+// 	global $current_user;
+// 	if ($current_user->user_login!='admin'){
+// 	  remove_menu_page( 'edit.php?post_type=acf-field-group' );
+// 	}
+//   }
+// add_action( 'admin_menu', 'remove_acf_menu', 100 );
  
 // function rjs_lwp_contactform_css_js() {
 //     global $post;

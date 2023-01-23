@@ -5,13 +5,19 @@
   //     top: 100px;
   //     margin-bottom: 31px;
   // }
+  height: 100%;
+  align-self: stretch;
+  .wraper-sticky {
+    height: 100%;
+  }
+
   .widget {
     padding: 15px;
     ul {
       list-style: none;
       padding: 0px;
       .current-menu-item {
-        a {
+        a[aria-current="page"] {
           background: $main2 !important;
           color: #fff !important;
         }

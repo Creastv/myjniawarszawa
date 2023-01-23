@@ -158,18 +158,45 @@ function register_acf_block_types() {
     //         wp_enqueue_script( 'cr-cennik-table-block', get_template_directory_uri() . '/blocks/includes/cennik-datatable.js', array(), '20130459', true );
     //     },
     //   ));
- acf_register_block_type(array(
-        'name'              => 'text-seo',
-        'title'             => __('SEO tekst'),
-        'render_template'   => 'blocks/block-seo.php',
-        'category'          => 'formatting',
-        'icon' => array(
-          'background' => '#efd6ae',
-          'foreground' => '#fff',
-          'src' => 'ellipsis',
-        ),
-      'mode'            => 'preview', 
-      'keywords'          => array( 'text-seo' ),
+    acf_register_block_type(array(
+            'name'              => 'text-seo',
+            'title'             => __('SEO tekst'),
+            'render_template'   => 'blocks/block-seo.php',
+            'category'          => 'formatting',
+            'icon' => array(
+              'background' => '#ff7800',
+              'foreground' => '#fff',
+              'src' => 'ellipsis',
+            ),
+          'mode'            => 'preview', 
+          'keywords'          => array( 'text-seo' ),
+    ));
+
+    acf_register_block_type(array(
+            'name'              => 'cta-call',
+            'title'             => __('CTA'),
+            'render_template'   => 'blocks/block-cta.php',
+            'category'          => 'formatting',
+            'icon' => array(
+              'background' => '#ff7800',
+              'foreground' => '#fff',
+              'src' => 'ellipsis',
+            ),
+          'mode'            => 'preview', 
+          'keywords'          => array( 'cta', 'zadzwoń' ),
+    ));
+    acf_register_block_type(array(
+            'name'              => 'bulety',
+            'title'             => __('Bullets'),
+            'render_template'   => 'blocks/block-bulety.php',
+            'category'          => 'formatting',
+            'icon' => array(
+              'background' => '#ff7800',
+              'foreground' => '#fff',
+              'src' => 'ellipsis',
+            ),
+          'mode'            => 'preview', 
+          'keywords'          => array( 'bulety' ),
     ));
 
 }

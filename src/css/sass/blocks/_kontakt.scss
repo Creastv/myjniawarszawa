@@ -1,63 +1,62 @@
-.wrap-full{
-    width: 100vw;
-    margin-left: -50vw;
-    left: 50%;
-    position: relative;
+.wrap-full {
+  width: 100vw;
+  margin-left: -50vw;
+  left: 50%;
+  position: relative;
 }
-.kontakt-bl{
-    padding: 30px 15px;
+.kontakt-bl {
+  padding: 30px 15px;
 
-    background-attachment: fixed;
-    background-size: cover;
-    
-    .wraper-dane{
-        list-style: none;
-        padding: none;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 0;
-        padding: 0;
-        li{
-            text-align: center;
-            padding: 15px 40px;
-            border-right:2px solid rgba(255, 255, 255, .4);
-            @media #{$md}{
-                width: 25%;
-            }
-            @media #{$sm}{
-                width: 50%;
-                border:none
-            }
-            @media #{$xs}{
-                width: 50%;
-                padding: 10px;
-            }
-            &:last-child{
-                border:none;
-            }
-            p{
-                color:#fff;
-                margin-bottom: 0;
-                @media #{$xs}{
-                    font-size: 12px;
-                }
-                
-            }
-            a{
-                color:#fff;
-                text-decoration: underline;
-                text-decoration-style: dotted;
-                text-decoration-thickness: from-font;
-                &:hover{
-                    color:$main2;
-                }
-            }
-            i{
-                color:$main;
-                font-size: 31px;
-                margin-bottom: 10px;
-            }
+  background-attachment: fixed;
+  background-size: cover;
+
+  .wraper-dane {
+    list-style: none;
+    padding: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    li {
+      text-align: center;
+      padding: 15px 40px;
+      border-right: 2px solid rgba(255, 255, 255, 0.4);
+      @media #{$md} {
+        width: 25%;
+      }
+      @media #{$sm} {
+        width: 50%;
+        border: none;
+      }
+      @media #{$xs} {
+        width: 50%;
+        padding: 10px;
+      }
+      &:last-child {
+        border: none;
+      }
+      p {
+        color: #fff;
+        margin-bottom: 0;
+        @media #{$xs} {
+          font-size: 12px;
         }
+      }
+      a {
+        color: #fff;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-decoration-thickness: from-font;
+        &:hover {
+          color: $main2;
+        }
+      }
+      i {
+        color: $main2;
+        font-size: 31px;
+        margin-bottom: 10px;
+      }
     }
+  }
 }

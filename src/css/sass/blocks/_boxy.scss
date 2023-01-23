@@ -1,28 +1,29 @@
 .boxy {
-  padding: 20px 0;
-  @media #{$sm} {
-    padding: 50px 0;
-  }
+  // padding: 20px 0;
+  // @media #{$sm} {
+  //   padding: 50px 0;
+  // }
   .wraper-boxy {
     display: flex;
+    gap: 20px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
     li {
-      width: 33.333%;
-      padding: 2%;
+      width: calc(33.333% - 20px);
+      // padding: 2%;
       @media #{$sm} {
-        width: 50%;
+        width: calc(50% - 20px);
       }
       a {
-        box-shadow: 0 0 40px 5px rgba(51, 51, 51, 0.3);
+        box-shadow: 0 0 40px 5px rgba(51, 51, 51, 0.1);
         border-radius: 10px;
         overflow: hidden;
         display: block;
         position: relative;
-
+        max-height: 200px;
         &:hover {
           box-shadow: 0 0 40px 5px rgba(51, 51, 51, 0.5);
           transform: translateY(-15px);
@@ -34,6 +35,7 @@
             h3 {
               background: $main2;
               //   border-radius: 100px;
+              // font-weight: 400;
               i {
                 color: #fff;
               }
@@ -57,7 +59,7 @@
             font-family: "Open Sans", sans-serif;
             border-radius: 10px;
             color: #fff;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.8);
             width: 100%;
             font-size: 16px;
             margin-bottom: 0;
