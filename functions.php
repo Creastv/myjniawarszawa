@@ -109,9 +109,9 @@ function cr_scripts() {
 		wp_enqueue_script( 'produkt-slider-similar', get_template_directory_uri() . '/src/js/slider-home.js', array(), '20130457', true );
 	}
 	
-	wp_deregister_script( 'jquery' );
-    wp_register_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js' );
-	wp_enqueue_script( 'jquery' );
+	// wp_deregister_script( 'jquery' );
+    // wp_register_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js' );
+	// wp_enqueue_script( 'jquery' );
 	
 	// bootstrap js
 	wp_enqueue_script('cr_bootstrap_js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', array( 'jquery' ),'2', true );

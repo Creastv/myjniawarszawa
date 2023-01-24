@@ -64,25 +64,25 @@
           </div>
       </footer>
 
-      <script async defer src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyDly-SBtTw7KJVvlOPKlwtdARjiU-I95u4&callback=Function.googlePlaces"></script>
+      <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyDly-SBtTw7KJVvlOPKlwtdARjiU-I95u4&callback=Function.googlePlaces"></script> -->
       <?php wp_footer(); ?>
 
       </body>
       <script>
 jQuery(document).ready(function() {
-    jQuery(window).resize(function() {
-        if (jQuery(window).width() < 768) {
 
-            jQuery('.dropdown-toggle').removeAttr('data-hover');
-            // jQuery('.dropdown-toggle').removeAttr('href');
-            jQuery('.dropdown-toggle').click(function(event) {
-                event.preventDefault();
-            });
+    if (jQuery(window).width() < 768) {
 
-        } else {
-            jQuery('.dropdown-toggle').attr('data-hover', 'dropdown');
-        }
-    });
+        jQuery('.dropdown-toggle').removeAttr('data-hover');
+        // jQuery('.dropdown-toggle').removeAttr('href');
+        jQuery('.dropdown-toggle').click(function(event) {
+            event.preventDefault();
+        });
+
+    } else {
+        jQuery('.dropdown-toggle').attr('data-hover', 'dropdown');
+    }
+
 });
       </script>
 
