@@ -98,7 +98,7 @@ function register_acf_block_types() {
       'enqueue_assets'    => function(){
         wp_enqueue_style( 'cr_swiper', 'https://unpkg.com/swiper/swiper-bundle.min.css' );
 	    	wp_enqueue_script('cr-swiper_js', 'https://unpkg.com/swiper/swiper-bundle.min.js',  array(), '20130456', true );
-        wp_enqueue_script('cr-goo_api', 'https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyDly-SBtTw7KJVvlOPKlwtdARjiU-I95u4',  array(), '20130456', true );
+        // wp_enqueue_script('cr-goo_api', 'https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyDly-SBtTw7KJVvlOPKlwtdARjiU-I95u4&callback=Function.prototype',  array(), '20130456', true );
 	    	wp_enqueue_script( 'g-reviews', get_template_directory_uri() . '/blocks/includes/g-reviews.js', array(), '20130457', true );
       }
     ));

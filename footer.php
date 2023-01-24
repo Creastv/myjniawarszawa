@@ -63,7 +63,23 @@
               </div>
           </div>
       </footer>
+
+      <script async defer src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyDly-SBtTw7KJVvlOPKlwtdARjiU-I95u4&callback=Function.googlePlaces"></script>
       <?php wp_footer(); ?>
+      <!-- <script>
+jQuery("#oogle-reviews").googlePlaces({
+    placeId: "ChIJ_3v0NdEzGUcRL4ZJ0ezCkDc",
+    render: ["reviews"],
+    maxRows: 5,
+    minRating: 2,
+    textBreakLength: "1"
+    // moreReviewsButtonLabel: 'Pokaż więcej opinini',
+    // writeReviewButtonUrl: 'https://www.google.com/search?client=opera&q=Global+Elite+Car+⭐+Wypożyczalnia+samochodów+sportowych+i+luksusowych&sourceid=opera&ie=UTF-8&oe=UTF-8#lrd=0x471ecb77b415cef1:0x64b9af3d7a745962,1,,,',
+    // writeReviewButtonLabel: 'Napisz opinię',
+    // moreReviewsButtonUrl:"https://www.google.com/search?client=opera&q=Global+Elite+Car+⭐+Wypożyczalnia+samochodów+sportowych+i+luksusowych&sourceid=opera&ie=UTF-8&oe=UTF-8#lrd=0x471ecb77b415cef1:0x64b9af3d7a745962,3,,,"
+});
+      </script> -->
       </body>
+
 
       </html>
