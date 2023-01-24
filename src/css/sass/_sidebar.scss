@@ -13,6 +13,9 @@
 
   .widget {
     padding: 15px;
+    @media #{$sm} {
+      padding: 0px;
+    }
     ul {
       list-style: none;
       padding: 0px;

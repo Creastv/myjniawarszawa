@@ -19,11 +19,11 @@ body {
   max-width: 90%;
 }
 ::-moz-selection {
-  background: $main;
+  background: lighten($main2, 40%);
   color: #fff;
 }
 ::selection {
-  background: $main;
+  background: lighten($main2, 40%);
   color: #fff;
 }
 

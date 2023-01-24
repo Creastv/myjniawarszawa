@@ -10520,6 +10520,12 @@ a:hover {
   display: inline-block;
 }
 
+@media only screen and (max-width: 992px) {
+  .title-bl small {
+    padding-left: 0px;
+  }
+}
+
 .title-bl small:before {
   content: "";
   position: absolute;
@@ -10530,6 +10536,12 @@ a:hover {
   top: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
+}
+
+@media only screen and (max-width: 992px) {
+  .title-bl small:before {
+    display: none;
+  }
 }
 
 .boxy .wraper-boxy {
