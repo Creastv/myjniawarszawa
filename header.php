@@ -48,6 +48,7 @@
                             <p> <?php echo $tresc; ?></p>
                             <a href="<?php echo $btnUrl; ?>" class="btn btn-main btn-ico-right"><?php echo $btnText; ?> <i class="fas fa-chevron-right"></i></a>
                         </div>
+                        <a href="#oferta" class="after"></a>
                     </div>
                 </div>
                 <?php endwhile; ?>
@@ -55,7 +56,7 @@
             <!-- Add Arrows -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-            <a href="#oferta" class="after"></a>
+
         </div>
         <?php endif; ?>
         <?php }  ?>
