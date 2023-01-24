@@ -12,23 +12,5 @@ if( !empty($block['className']) ) {
     <div class="wraper-seo">
         <?php the_field('tekst_seo'); ?>
     </div>
-    <a href="#" class="btn-acorderon">Rozwiń</a>
+    <a href="#" class="btn-acorderon"><span>Rozwiń</span></a>
 </div>
-
-<script>
-// const box = document.querySelector(".seo-roz");
-const btnAcordeon = document.querySelector(".btn-acorderon");
-const acordeon = document.querySelector('.wraper-seo');
-let flag = false;
-btnAcordeon.addEventListener('click', function(e) {
-    e.preventDefault();
-    flag = !flag;
-    if (flag) {
-        acordeon.classList.add('seo-open');
-        btnAcordeon.innerHTML = "Zwiń";
-    } else {
-        acordeon.classList.remove('seo-open');
-        btnAcordeon.innerHTML = "Rozwiń";
-    }
-});
-</script>

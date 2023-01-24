@@ -97,7 +97,7 @@
 
             </div><!-- #author-bio -->
 
-            <?php comments_template( '/comments.php' ); ?>
+            <?php // comments_template( '/comments.php' ); ?>
             <?php endwhile; ?>
             <?php endif; ?>
         </article>

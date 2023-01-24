@@ -170,6 +170,11 @@ function register_acf_block_types() {
             ),
           'mode'            => 'preview', 
           'keywords'          => array( 'text-seo' ),
+          'enqueue_assets'    => function(){
+        // if(! is_admin()){
+          wp_enqueue_script( 'block-seo', get_template_directory_uri() . '/blocks/includes/seo.js', array(), '20130497', true );
+          // }
+        },
     ));
 
     acf_register_block_type(array(

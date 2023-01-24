@@ -24,4 +24,36 @@
       opacity: 0;
     }
   }
+  .btn-acorderon {
+    color: $main2;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+
+    &:hover {
+      span {
+        color: #fff;
+        background-color: $main2;
+      }
+    }
+
+    span {
+      display: inline-block;
+      padding: 5px 10px;
+      border: 1px solid $main2;
+      border-radius: 100px;
+      min-width: 100px;
+      font-size: 12px;
+      transition: all 0.3s 0s ease;
+    }
+  }
+}
+.seo-roz.seo-open {
+  .wraper-seo {
+    height: auto;
+    &:after {
+      opacity: 0;
+    }
+  }
 }

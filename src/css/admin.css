@@ -11292,6 +11292,42 @@ a:hover {
   opacity: 0;
 }
 
+.seo-roz .btn-acorderon {
+  color: #c31b1b;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 20px;
+}
+
+.seo-roz .btn-acorderon:hover span {
+  color: #fff;
+  background-color: #c31b1b;
+}
+
+.seo-roz .btn-acorderon span {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #c31b1b;
+  border-radius: 100px;
+  min-width: 100px;
+  font-size: 12px;
+  -webkit-transition: all 0.3s 0s ease;
+  transition: all 0.3s 0s ease;
+}
+
+.seo-roz.seo-open .wraper-seo {
+  height: auto;
+}
+
+.seo-roz.seo-open .wraper-seo:after {
+  opacity: 0;
+}
+
 .cta-bl {
   padding: 20px;
   background: #e8e8e8;
