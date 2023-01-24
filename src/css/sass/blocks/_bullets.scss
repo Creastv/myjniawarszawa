@@ -1,0 +1,30 @@
+.bulety-bl {
+  margin-bottom: 50px;
+  .bullets__wraper {
+    display: flex;
+    // justify-content: center;
+    gap: 20px;
+    @media #{$sm} {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .item {
+      @media #{$sm} {
+        display: flex;
+        gap: 20px;
+      }
+      .icona {
+        margin-bottom: 20px;
+        svg {
+          width: 34px;
+          height: 34px;
+          path {
+            stroke: $main2;
+          }
+        }
+      }
+      .content {
+      }
+    }
+  }
+}

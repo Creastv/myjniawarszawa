@@ -213,7 +213,7 @@
   };
 })(jQuery);
 jQuery("#google-reviews").googlePlaces({
-  placeId: "ChIJ_3v0NdEzGUcRL4ZJ0ezCkDc",
+  placeId: "AIzaSyDly-SBtTw7KJVvlOPKlwtdARjiU-I95u4",
   render: ["reviews"],
   maxRows: 5,
   minRating: 2,
