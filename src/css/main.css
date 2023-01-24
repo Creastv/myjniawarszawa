@@ -10724,7 +10724,7 @@ blockquote p {
   -webkit-transition: all 0.3s 0s ease;
   transition: all 0.3s 0s ease;
   border: 1px solid #ededed;
-  margin: 30px;
+  margin: 0px;
 }
 
 .tabela-cennik table {
