@@ -4,12 +4,14 @@
     display: flex;
     // justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
     @media #{$sm} {
-      flex-wrap: wrap;
       gap: 10px;
     }
     .item {
+      width: 33.333%;
       @media #{$sm} {
+        width: 100%;
         display: flex;
         gap: 20px;
       }
