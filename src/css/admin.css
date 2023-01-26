@@ -11383,7 +11383,7 @@ a:hover {
 }
 
 .bulety-bl .bullets__wraper .item {
-  width: 33.333%;
+  width: calc(33.333% - 20px);
 }
 
 @media only screen and (max-width: 992px) {
